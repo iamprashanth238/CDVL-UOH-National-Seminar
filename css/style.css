@@ -1,0 +1,251 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #2C3E50;
+    border-radius: 10px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+}
+
+header .header-text {
+    text-align: center;
+    flex-grow: 1;
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Navigation Bar */
+nav {
+    margin-top: 10px;
+    background-color: #34495E;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Image */
+.conference-image {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+width: 150vw; /* Full viewport width */
+height: 80vh; /* Full viewport height */
+display: flex;
+flex-direction: column;
+justify-content: center; /* Centers content vertically */
+align-items: center; /* Centers content horizontally */
+text-align: center;
+background-image: url('Golden_Threshold_img1.jpg');
+background-size: cover; /* Ensures image covers the entire section */
+background-position: center; /* Centers the image */
+background-repeat: no-repeat;
+color: white; /* Ensures text is visible over the image */
+padding: 20px;
+}
+
+.home h1, .home h3, .home p {
+background: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay for readability */
+padding: 10px;
+border-radius: 5px;
+display: inline-block;
+}
+
+
+section h2 {
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+section li {
+    list-style: none;
+}
+
+
+
+/* Speakers Section */
+.speakers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speakers img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.speakers p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+background-color: #2C3E50;
+color: white;
+padding: 20px;
+margin-top: 30px;
+border-radius: 5px;
+text-align: center;
+}
+
+footer p {
+margin: 5px 0;
+}
+
+footer a {
+color: #FFD700;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+.contact-container {
+display: flex;
+justify-content: space-around;
+text-align: left;
+flex-wrap: wrap;
+}
+
+.contact {
+max-width: 45%;
+}
+
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .main-section, .nav-sec, .home, .about, .footer, .venue, .speakers, .contact, .theme, .header-text, .title {
+        width: 100%;
+    }
+
+    .home h1, .home h3, .home p {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .venue h2, .venue p, .venue h3, .theme h2, .theme li, .about h2, .about p, .footer h3, .footer p, .main-section h1, .main-section h2, .register h2{
+        font-size: 13px;
+    }
+
+    .nav-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-sec ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header img {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    header .header-text {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
