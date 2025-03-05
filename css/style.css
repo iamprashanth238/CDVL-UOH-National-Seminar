@@ -103,7 +103,6 @@ flex-direction: column;
 justify-content: center; /* Centers content vertically */
 align-items: center; /* Centers content horizontally */
 text-align: center;
-background-image: url('Golden_Threshold_img1.jpg');
 background-size: cover; /* Ensures image covers the entire section */
 background-position: center; /* Centers the image */
 background-repeat: no-repeat;
@@ -220,6 +219,20 @@ max-width: 45%;
         justify-content: center;
         align-items: center;
     }
+
+    .committee-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .committee-box {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .committee-box h3, .committee-box p {
+        font-size: 13px;
+    }
 }
 
 
@@ -248,4 +261,40 @@ max-width: 45%;
     nav ul li {
         margin: 10px 0;
     }
+}
+
+
+/* Commitee styles */
+/* Style for Committee Section */
+.committee-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Flexbox Container */
+.committee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Individual Committee Box */
+.committee-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    justify-content: center ;
+}
+
+/* Headings */
+.committee-box h3 {
+    color: #2C3E50;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
